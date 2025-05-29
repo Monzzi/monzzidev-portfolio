@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Zen+Kurenaido&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-francois: "Francois One", sans-serif;
+  --font-kurenaido: "Zen Kurenaido", sans-serif;
+}
+
+body {
+  background-color: #effbf4;
+}
+
+.font-francois {
+  font-family: var(--font-francois);
+}
+
+.font-kurenaido {
+  font-family: var(--font-kurenaido);
+}
+
+.container {
+  max-width: 80rem; /* equivalente a max-w-7xl en Tailwind */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* igual que px-6 */
+  padding-right: 1.5rem;
+}
+
+/* Enlaces /about */
+.link-fancy {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-kurenaido);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.link-fancy::before {
+  content: "•";
+  position: absolute;
+  left: -1em;          /* lo justo para que esté cerquita */
+  top: 0.2em;            /* ajusta esto si hiciera falta afinar más */
+  opacity: 0;
+  transform: translateX(-0.3em);
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 1rem;       /* igual o un pelín menor que el texto */
+}
+
+.link-fancy:hover {
+  transform: translateX(0.9em); /* solo al hacer hover */
+}
+
+.link-fancy:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
