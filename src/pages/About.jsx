@@ -6,23 +6,29 @@ const socials = [
 ];
 
 const experience = [
-  { name: "Stage en Data Value Management", url: "https://www.linkedin.com/company/data-value-management" },
-  { name: "Bootcamp intensivo Albañiles Digitales", url: "https://veridas.com/es/albaniles-digitales/" },
+  {
+    name: "Stage en Data Value Management",
+    url: "https://www.linkedin.com/company/data-value-management",
+  },
+  {
+    name: "Bootcamp intensivo Albañiles Digitales",
+    url: "https://veridas.com/es/albaniles-digitales/",
+  },
   { name: "Proyecto frontend DVM", url: "https://dvm-website.vercel.app/" },
-  { name: "Proyectos frontend Berrifin", url: "https://berrifin.eus/" },
+  { name: "Proyecto frontend Berrifin", url: "https://berrifin.eus/" },
 ];
 
 const About = () => {
   return (
-    <section className="max-h-screen w-full py-16">
+    <section className="max-h-screen w-full py-45">
       <div className="container max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* IZQUIERDA: TEXTO + LISTAS */}
         <div>
           <p className="font-kurenaido text-3xl md:text-4xl font-light leading-snug mb-12">
-            Aprendí a desarrollar como aprendo todo: con pasión, observando, practicando,
-            afinando. Hoy diseño sitios que piensan en quien los usa, con
-            estructuras limpias, estética cuidada y una claridad que nace de la
-            empatía.
+            Aprendí a desarrollar como aprendo todo: con pasión, observando,
+            practicando, afinando. Hoy diseño sitios que piensan en quien los
+            usa, con estructuras limpias, estética cuidada y una claridad que
+            nace de la empatía.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-18">

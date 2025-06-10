@@ -4,12 +4,12 @@ import { projects } from "../data/projectsData";
 const Home = () => {
   return (
     <section className="min-h-screen w-full pt-10 pb-10">
-      <div className="container max-w-7xl mx-auto px-6">
+      <div className="container mx-auto">
         {/* Texto descriptivo ocupando todo el ancho */}
         <div className="mb-25">
-          <p className="text-3xl ml-80 text-start leading-relaxed font-kurenaido">
+          <p className="text-3xl ml-120 mr-50 mt-25 text-start leading-relaxed font-kurenaido">
             Frontend developer. Combino lógica, diseño y sensibilidad para crear
-            aplicaciones con alma y que resuelven problemas.
+            aplicaciones con alma y que resuelvan desafíos.
           </p>
         </div>
 

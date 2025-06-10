@@ -7,7 +7,9 @@
 }
 
 body {
-  background-color: #effbf4;
+  /* background-color: #effbf4; */
+  background-color: white;
+
 }
 
 .font-francois {
@@ -19,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 80rem; /* equivalente a max-w-7xl en Tailwind */
+  max-width: 90rem; /* equivalente a max-w-7xl en Tailwind */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem; /* igual que px-6 */
@@ -57,3 +59,18 @@ body {
   transform: translateX(0);
 }
 
+/* Marquee animado ProjectTicker */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}

@@ -26,7 +26,7 @@ const Footer = () => {
 
       {/* DERECHA: copyright */}
       <div className="font-kurenaido text-lg text-neutral-500">
-        © MonzziDev 2025
+        © MonzziDev {new Date().getFullYear()}.
       </div>
     </footer>
   );

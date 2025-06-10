@@ -3,29 +3,28 @@ export const projects = [
     id: "dvm-website",
     title: "DVM Website",
     path: "/projects/DVMProject",
-    style: "absolute top-[0px] left-[5px] w-[400px] h-[980px] border-2 border-red-500",
+    style: "absolute top-[0px] left-[90px] w-[600px] h-[515px] ",
     image: "/DVM_project.png",
     description:
-      "Rediseño completo de la web corporativa de una consultora especializada en Big Data y IA.",
+      "Rediseño completo de la web corporativa de una consultora especializada en Big Data e IA.",
   },
   {
     id: "berrifin-website",
     title: "Berrifin Website",
     path: "/projects/berrifin",
-    style:
-      "absolute top-[350px] left-[580px] w-[700px] h-[600px] border-2 border-red-500",
-    image: "", // cámbialo cuando tengas el bueno
+    style: "absolute top-[550px] left-[800px] w-[580px] h-[600px] ",
+    image: "/Berrifin_project.png",
     description:
       "Diseño e implementación de una web sencilla y visual para una UTE de consultoría financiera.",
   },
   {
-    id: "academy",
-    title: "Academy Fullstack",
-    path: "/projects/academy",
-    style:
-      "absolute top-[1050px] left-[200px] w-[490px] h-[600px] border-2 border-red-500",
-    image: "", // cámbialo cuando tengas el bueno
+    id: "arabahub",
+    title: "ArabaHub Dashboard",
+    path: "/projects/arabahub",
+
+    style: "absolute top-[900px] left-[100px] w-[499px] h-[550px]",
+    image: "/Arabahub_project.png",
     description:
-      "Proyecto final de bootcamp fullstack. Gestión de usuarios, profesores y estudiantes de una academia.",
+      "Dashboard interactivo para visualizar bases de datos públicos del sector del comercio en la provincia de Álava.",
   },
 ];

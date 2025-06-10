@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 const ProjectCard = ({ title, description, image, path, style, index }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 60, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      initial={{ opacity: 0, y: 90 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }} // Solo una vez, cuando se ve un 20% del componente
       transition={{
-        duration: 0.8,
-        ease: [0.17, 0.67, 0.83, 0.67],
+        duration: 0.9,
+        ease: "easeOut",
         delay: index * 0.25,
       }}
       className={`flex flex-col gap-4 ${style}`}
@@ -16,7 +17,7 @@ const ProjectCard = ({ title, description, image, path, style, index }) => {
       {/* Imagen con link */}
       <Link to={path} className="block relative overflow-hidden group h-full">
         <div
-          className="w-full h-full bg-contain bg-no-repeat bg-center relative shadow-lg transition-all duration-700 group-hover:scale-105 group-hover:rotate-[-1deg] group-hover:contrast-125 group-hover:saturate-150"
+          className="w-full h-full bg-contain bg-no-repeat bg-center relative shadow-5xl transition-all duration-700"
           style={{ backgroundImage: `url(${image})` }}
         ></div>
       </Link>
