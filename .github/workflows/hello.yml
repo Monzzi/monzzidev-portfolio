@@ -1,0 +1,17 @@
+name: Primer workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Saludar en consola
+        run: echo "Hola desde GitHub Actions 🚀"
